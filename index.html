@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>AutoEscuelaZs</title>
+
+</head>
+<style>
+
+    .bg-copy {
+        background-color: #000000A0;
+        color: white;
+        z-index: 99;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 330px;
+        padding: 8px 0 8px 0;
+        margin: auto;
+    }
+
+    .nav {
+        height: 8vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap
+    }
+    .landing-section {
+        padding: 100px 0;
+    }
+    .landing-header {
+        padding: 250px 0;
+    }
+
+    .element-header-card{
+        color: #fff;
+        font-family: "Montserrat", sans-serif ;
+        font-size: 37px;
+        font-weight: 800;
+        line-height: 1.3em;
+        letter-spacing: 0px;
+        text-shadow: 0px 2px 3px rgb(0 0 0 / 22%);
+    }
+
+    .icon-card{
+        width: 100px;
+        display: block;
+        margin: auto;
+    }
+
+    .card-icon{
+        height: 300px;
+    }
+
+    .btn-choose-plan
+    {
+        border-color: #ff7400;
+        background-color: white;
+        color: #ff7400;
+    }
+
+</style>
+
+<body>
+    <div class="wrapper" id="app">
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light text-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Auto Escuela</a>
+
+                <ul class="navbar-nav ml-auto">
+                    <li>Servicios</li>
+                    <li>Planes</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <section class="content"></section>
+            <div class="container-fluid" style="padding: 0px;  margin: 0px;">
+                <div class=" img-fluid"
+                    style="background-image: url('assets/css/images/autoescuela2.jpg'); height: 100vh; background-size: 100%;background-attachment: fixed;">
+                    <div class="col-md-12" style="height: 45vh;">
+                        <p
+                            style="font-size: 3.25rem; font-weight: 1000;text-align: center;padding-top: 42px;color: #464646;text-shadow: 1px 1px white;">
+                            AUTO ESCUELA ZS</p>
+                        <h3 style="text-align: center; text-shadow: 1px 1px black;color: white;">Saca tu licencia de
+                            conducir con nosotros!</h3>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style="background-color: #4a5568">
+                        <ul class="list-group list-group-horizontal-sm" style="height: 20vh">
+                            <li class="list-group-item">Alm. Brown</li>
+                            <li class="list-group-item">Lomas de Zamora</li>
+                            <li class="list-group-item">Lanús</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>!-->
+        </div>
+        <section id="icons"></section>
+        <div class="section landing-section" style="background-color: #011a34d9;">
+            <div class="container" style="display: flex; flex-flow: row wrap">
+                <div class="row">
+                    <div class="col col-md-4 col-sm-12">
+                        <div class="mb-3">
+                            <div class="card card-icon shadow-lg p-3 mb-5 bg-white rounded">
+                                <img src="assets/css/images/Iconcone.png" class="card-img-top img-fluid icon-card "
+                                    alt="...">
+                                <div class="card-body">
+                                    <h3 class="text-center" style="color: #ff7400;font-weight: 700">Rendí con nosotros
+                                    </h3>
+                                    <p class="display-6 text-center">Te acompañamos a rendir el
+                                        examen de conducir y además, podes disponer del vehículo con el que practicaste</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4 col-sm-12">
+                        <div class="mb-3">
+                            <div class="card card-icon shadow-lg p-3 mb-5 bg-white rounded">
+                                <img src="assets/css/images/iconWheel.png" class="card-img-top img-fluid icon-card"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h3 class="text-center" style="color: #ff7400;font-weight: 700">Doble Comando</h3>
+                                    <p class="display-6 text-center">Nuestros móviles cuentan con doble comando para
+                                        tener un total control de la unidad ante cualquier eventualidad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4 col-sm-12">
+                        <div class="mb-3">
+                            <div class="card card-icon shadow-lg p-3 mb-5 bg-white rounded">
+                                <img src="assets/css/images/trafficligh.png" class="card-img-top img-fluid icon-card" alt="..." style="width: 115px;">
+                                <div class="card-body">
+                                    <h3 class="text-center" style="color: #ff7400;font-weight: 700">Servicio Puerta a
+                                        Puerta</h3>
+                                    <p class="display-6 text-center">Te pasamos a buscar por donde estes sin costo
+                                        adicional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col col-md-4 col-sm-12">
+                        <div class="mb-3">
+                            <div class="card card-icon shadow-lg p-3 mb-5 bg-white rounded">
+                                <img src="assets/css/images/iconPersons.png" class="card-img-top img-fluid icon-card"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h3 class="text-center" style="color: #ff7400;font-weight: 700">Profesionales</h3>
+                                    <p class="display-6 text-center">Contamos con instructores capacitados que te
+                                        enseñan a tomar conciencia de
+                                        la responsabilidad de estar al volante.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-4 col-sm-12">
+                        <div class="mb-3">
+                            <div class="card card-icon shadow-lg p-3 mb-5 bg-white rounded">
+                                <img src="assets/css/images/iconcar.png" class="card-img-top img-fluid icon-card"
+                                    alt="..." style="padding-bottom: 10px; padding-top: 15px;">
+                                <div class="card-body">
+                                    <h3 class="text-center" style="color: #ff7400;font-weight: 700">Caja Automática o
+                                        Manual</h3>
+                                    <p class="display-6 text-center">Además de nuestras unidades de caja manual,
+                                        también contamos con unidades con caja automatica.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <section class="bg-light py-5 border-bottom">
+        </section>
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5 col-sm-12">
+                <h2 class="fw-bolder">CONOCE NUESTROS PLANES</h2>
+                <p class="lead mb-0">¡Nos adaptamos a tus necesidades!</p>
+                <hr>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <!-- Pricing card free-->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded mb-5 mb-xl-0" style="border-color: #011a34;">
+                        <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold text-muted">PRINCIPIANTE</div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">$11.700</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                                    <strong>5 clases de una hora</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Servicio puerta a puerta
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Circulación en tránsito real
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Auto con caja manual y doble comando.
+                                </li>
+                                <li class="mb-2 text-muted">
+                                    <i class="fa fa-circle" aria-hidden="true"></i>
+                                    Horario a coordinar con el alumno
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-choose-plan"  href="#!">Reserva tu plan</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing card pro-->
+                <div class="col-lg-6 col-xl-4">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded mb-5 mb-xl-0" style="border-color: #011a34;">
+                        <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                INTERMEDIO
+                            </div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">$16200</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                    
+                                    <strong>8 clases de una hora</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Servicio puerta a puerta
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Circulación en tránsito real
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Auto con caja manual y doble comando.
+                                </li>
+                                <li class="mb-2 text-muted">
+                                    <i class="fa fa-circle" aria-hidden="true"></i>
+                                    Horario a coordinar con el alumno
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-choose-plan" href="#!">Reserva tu plan</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pricing card enterprise-->
+                <div class="col-lg-6 col-xl-4 text-center">
+                    <div class="card shadow-lg p-3 mb-5 bg-white rounded" style="border-color: #011a34;">
+                        <div class="card-body p-5">
+                            <div class="small text-uppercase fw-bold text-muted">AVANZADO</div>
+                            <div class="mb-3">
+                                <span class="display-4 fw-bold">$19900</span>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2 text-center">
+                                    <strong >10 clases de una hora</strong>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Servicio puerta a puerta
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Circulación en tránsito real
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Auto con caja manual y doble comando.
+                                </li>
+                                <li class="mb-2 text-muted">
+                                    <i class="fa fa-circle" aria-hidden="true"></i>
+                                    Horario a coordinar con el alumno
+                                </li>
+
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-choose-plan" style="outline-color:#ff7400" href="#!">Reserva tu plan</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section section-light-brown landing-section" style="background: #d8d8d8">
+            <div class="container">
+                <h4 class="text-center">Zona de Cobertura</h4>
+                <h5 class="text-center">SERVICIO PUERTA A PUERTA SIN COSTO</h5>
+                <div class="col-md-12">
+                    <div class="row row-cols-2">
+                        <div class="col-md-6 col-sm-12">
+                            <h3>
+                                RESERVA TU PLAN!
+                            </h3>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="name">Tu nombre</label>
+                                            <input class="form-control" id="name" name="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="mail"> Tu mail</label>
+                                            <input class="form-control" id="mail" name="mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="text"> Asunto</label>
+                                            <input class="form-control" id="text" name="mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message"> Mensaje</label>
+                                            <textarea class="form-control" id="message" name="message"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-success float-right">Enviar
+                                            consulta</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 map-responsive">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74101.75479451074!2d-58.41886007329806!3d-34.834465725492365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32d1e2e8d9123%3A0x20014125732845a6!2sAlmte%20Brown%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1652113902616!5m2!1ses!2sar"
+                                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</html>
