@@ -1,0 +1,102 @@
+
+	<style>
+        @import 'https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans';
+
+*{box-sizing:border-box;}
+
+html, body
+{
+	background:#011a34d9;
+}
+
+.container
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width:200px;
+}
+
+.container h1
+{
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Baloo Tamma', cursive;
+	font-weight:900;
+	color: #F78756 ;
+	margin-bottom:0px;
+	line-height:0;
+}
+
+.container h1 span{color:#C92820;}
+
+.container h2
+{
+	text-align:center;
+	text-transform:uppercase;
+	font-family: 'Baloo Tamma', cursive;
+	font-weight:900;
+	color:#F78756;
+	font-size:14px;
+}
+
+
+
+.container form.is-success img.bite{display:block;}
+
+
+.container .submit {
+	background-color: #F78756;
+    text-align: center;
+    position: relative;
+    width: 130px;
+    position: relative;
+    z-index: 0;
+    top: -7px;
+    padding-top: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 0px; */
+    border: 10px;
+    border-radius: 10px;
+}
+
+
+.container.is-focused .submit
+{
+	top:-30px;
+	height:50px;
+}
+
+.container.is-success .submit
+{
+	top:-30px;
+	height:50px;
+	background:#81b45c !important;
+}
+
+.container  .submit:hover, .container .submit:focus, .container .submit:active
+{
+	background:#ff7400;
+}
+
+    </style>
+    
+    <div class="container">
+        <h1><span>Gra</span>cias!</h1>
+        <h2>Su mensaje ha sido enviado!</h2>
+    </div>
+    
+	<script>
+		//set timeout redirect
+
+		setTimeout(function(){
+			window.location.href = "index.html#form-contact";
+		}, 1500);
+	</script>
